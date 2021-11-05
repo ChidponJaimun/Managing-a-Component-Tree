@@ -20,9 +20,9 @@ function App() {
 
   function deleteItem(id) {
     console.log(id);
-    // setItems((prevValue) => {
-    //   return;
-    // });
+    setItems((prevValue) => {
+      return prevValue.filter((item, index) => index !== id);
+    });
   }
 
   return (
